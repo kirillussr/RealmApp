@@ -20,6 +20,7 @@
 		ED8F7BCE2A9A13FA006B8B8A /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8F7BCD2A9A13FA006B8B8A /* DataManager.swift */; };
 		ED8F7BD12A9A1B46006B8B8A /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = ED8F7BD02A9A1B46006B8B8A /* Realm */; };
 		ED8F7BD32A9A1B46006B8B8A /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = ED8F7BD22A9A1B46006B8B8A /* RealmSwift */; };
+		ED8F7BD72AADB5F5006B8B8A /* Extension + TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8F7BD62AADB5F5006B8B8A /* Extension + TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		ED8F7BC92A9A0B48006B8B8A /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		ED8F7BCB2A9A0EFB006B8B8A /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		ED8F7BCD2A9A13FA006B8B8A /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		ED8F7BD62AADB5F5006B8B8A /* Extension + TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + TableViewCell.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				ED8F7BBD2A99FF2D006B8B8A /* TaskListViewController.swift */,
 				ED8F7BC92A9A0B48006B8B8A /* AlertController.swift */,
 				ED8F7BCB2A9A0EFB006B8B8A /* TasksViewController.swift */,
+				ED8F7BD62AADB5F5006B8B8A /* Extension + TableViewCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			files = (
 				ED8F7BAA2A99FCF2006B8B8A /* AppDelegate.swift in Sources */,
 				ED8F7BCE2A9A13FA006B8B8A /* DataManager.swift in Sources */,
+				ED8F7BD72AADB5F5006B8B8A /* Extension + TableViewCell.swift in Sources */,
 				ED8F7BAC2A99FCF2006B8B8A /* SceneDelegate.swift in Sources */,
 				ED8F7BC82A9A02EA006B8B8A /* StorageManager.swift in Sources */,
 				ED8F7BCC2A9A0EFB006B8B8A /* TasksViewController.swift in Sources */,

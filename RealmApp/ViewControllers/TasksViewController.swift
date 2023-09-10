@@ -73,9 +73,25 @@ final class TasksViewController: UITableViewController {
             isDone(true)
         }
         
-        let doneAction = UIContextualAction(style: .normal, title: "Done") { _, _, isDone in
+        let doneTitle = indexPath.section == 0 ? "Done" : "Undone"
+        
+        let doneAction = UIContextualAction(style: .normal, title: doneTitle) { [weak self] _, _, isDone in
             StorageManager.shared.doneTask(task)
-            tableView.reloadSections(IndexSet(integersIn: 0...1), with: .automatic)
+            
+            let currentTaskIndex = IndexPath(
+                row: self?.currentTasks.index(of: task) ?? 0,
+                section: 0
+            )
+            let completedTaskIndex = IndexPath(
+                row: self?.completedTasks.index(of: task) ?? 0,
+                section: 1
+            )
+            
+            let destinationIndexRow = indexPath.section == 0
+            ? completedTaskIndex
+            : currentTaskIndex
+            
+            tableView.moveRow(at: indexPath, to: destinationIndexRow)
             isDone(true)
         }
         
